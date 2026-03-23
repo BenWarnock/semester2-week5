@@ -10,6 +10,18 @@ int main(void){
  */
      char password[50];
 	 
+     while (1) {
+        printf("Enter Password: ");
+        scanf("%s", password);
+     
+        if (strcmp(password, "secure123") ==0) {
+            printf("Correct\n");
+            break;
+        } else {
+            printf("Acceess denied\n");
+        }
+        
+     }
 	 // compare using strcmp(str1,str2) from week 4
 	 // complete the rest of the code here
 	
